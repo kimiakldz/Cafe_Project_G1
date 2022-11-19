@@ -2,17 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    {% block title %}
-        {% if title %}
-            <title>{{ title }}</title>
-        {% else %}
-            <title>Untitled Page</title>
-        {% endif %}
-    {% endblock %}
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   {% if title %}
+        <title>{{ title }}</title>
+   {% else %}
+        <title>Cafe Project</title>
+   {% endif %}
 </head>
 <body>
-{% block content %}
-{% endblock content %}
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sign In</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+          </div>
+        </nav>
+    </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
