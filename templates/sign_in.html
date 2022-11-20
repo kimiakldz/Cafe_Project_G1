@@ -1,4 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
-<p>this is sign in page</p>
+<div>
+        <form method="post" action="">
+            {{form.hidden_tag()}}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{form.email.label(class="form-control-label")}}
+                    {{form.email(class="form-control form-control-lg is-invalid")}}
+
+                </div>
+                <div class="form-group">
+                      {{form.password.label(class="form-control-label")}}
+                    {{form.password(class="form-control form-control-lg is-invalid")}}
+                </div>
+                <div class="form-group">
+                      {{form.remember(class="form-check-input")}}
+                      {{form.remember.label(class="form-check-label")}}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{form.submit(class="btn btn-outline-info")}}
+            </div>
+            <small>
+                <a href="#" class="ml-2">Forgot Password?</a>
+            </small>
+        </form>
+
+    </div>
 {% endblock content %}
