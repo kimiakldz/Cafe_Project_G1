@@ -1,5 +1,6 @@
 from flask import Flask
 from view import home, sign_in, sign_up, menu, contact_us
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'dfe9442eb154ab74e01e7e7d063fcdf8'
 

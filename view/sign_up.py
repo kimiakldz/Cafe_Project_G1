@@ -1,13 +1,16 @@
 from flask import render_template, redirect, url_for, flash
 from view.form import SignUpForm
+from models.user import User
+from core.manager import db
+from core.manager import bcrypt
 
 
 def sign_up():
     form = SignUpForm()
-    # if form.validate_on_submit():
-    #     name= form['name']
-    #     record=User()
-    #
-    #     flash(f"Account created for {form.username.data}!", "success")
-    #     return redirect({{url_for('home')}})
+    if form.validate_on_submit():
+        user=User(fname=form.f_name.data,lname=form.l_name.data,email=form.email.data,password=bcrypt.generate_password_hash((form.password.data).decode('utf-8')))
+        db.session.add(user)
+        db.session.commit()
+        flash(f"Account created for {form.f_name.data}{form.l_name.data}!", "success")
+        return redirect({{url_for('home')}})
     return render_template('sign_up.html', form=form,  title='Sign Up')
