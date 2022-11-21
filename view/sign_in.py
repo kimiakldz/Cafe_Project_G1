@@ -1,4 +1,4 @@
-import bcrypt
+from core.manager import bcrypt
 from flask import render_template,url_for,flash,redirect
 from view.form import SignInForm
 from models.user import User

@@ -3,6 +3,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from app import app
 
+
 # create the extension
 db = SQLAlchemy()
 # create bcrypt to hash password
