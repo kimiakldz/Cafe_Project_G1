@@ -1,0 +1,59 @@
+
+.nav-image {
+  /* The image used */
+  background-image: url('https://t4.ftcdn.net/jpg/02/82/24/63/240_F_282246326_w0GrFUvQKhMxbtHkUMoS9j1vNc7pntqa.jpg');
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-back {
+  /* The image used */
+  background-image: url('https://www.etiquetteschoolofamerica.com/wp-content/uploads/2016/04/Coffee-House-Manners-What-Your-Barista-Wishes-You-Knew-scaled-e1586282099339.jpeg');
+  /* Full height */
+  height: 100%;
+  width: 100%
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-back {
+  /* The image used */
+  background-image: url('https://img.freepik.com/free-vector/watercolor-background-with-luxurious-golden-accents_79603-1190.jpg?w=2000');
+  /* Full height */
+  height: 100%;
+  width: 100%
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-back {
+  /* The image used */
+  background-image: url('https://coffeeaffection.com/wp-content/uploads/2022/06/female-hand-taking-cup-of-hot-coffee-from-barista_Olena-Yakobchuk_Shutterstock.jpg');
+  /* Full height */
+  height: 100%;
+  width: 100%
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-back {
+  background-color: rgb(84, 43, 11, 0.5);
+  bg-opacity-25;
+  box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+
+}

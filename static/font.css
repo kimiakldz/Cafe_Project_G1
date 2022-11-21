@@ -1,0 +1,22 @@
+@font-face {
+  src: url('fonts/AmstelvarAlpha-VF.ttf');
+  font-family:'AmstelvarAlpha';
+  font-style: normal;
+}
+
+label {
+  font: 1rem monospace;
+}
+
+.sample {
+  font: 2rem 'AmstelvarAlpha', sans-serif;
+  font-style: oblique 23deg;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 2px;
+}

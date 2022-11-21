@@ -1,4 +1,104 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Cafe Menu</h1>
+    <!-- Start menu Area -->
+			<section class="menu-back" class="menu-area section-gap" id="coffee">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="https://images.wallpaperscraft.com/image/single/coffee_cappuccino_cup_136699_3840x2400.jpg" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Cappuccino</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="https://i0.wp.com/caphekhoanbetong.com/wp-content/uploads/2021/09/cafe-americano-da-nong-ngot-thanh-chuan-my-1.jpg?fit=600%2C600&ssl=1" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Americano</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="https://i.lezzet.com.tr/images-xxlarge-secondary/espresso-nedir-nasil-yapilir-b53e90b2-4aad-41ca-aaba-4e4420ecfac4.jpg" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Espresso</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="https://awsimages.detik.net.id/community/media/visual/2022/05/24/macchiato-dan-cappuccino-3.jpeg?w=1200" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Macchiato</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRIREhIVERIREhERERIRERIPEhEPGBQZGRgUGBgcIy4lHB4rHxgYJjomKy8xNTY1GiQ7QDs1Py40NTEBDAwMEA8QGhIRHzEhISE0NDQ0NDQ0MTQxNDQ0NDExNDE0NDQxNDE0NDQ0NDE0NDQ0NDE0NDQ0NjQ0QD80NDE0NP/AABEIANsA5gMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABAEAACAQIDBAgCBwYFBQAAAAABAgADEQQSIQUxQVEGEyJSYXGRoTKBB0JysbLB0RQVM1NzkkNigqLwFyOT4fH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACERAQEAAgICAwADAAAAAAAAAAABAhEhMQNBEhNRBBRh/9oADAMBAAIRAxEAPwDxmEIQCEIQCEIQCEIQCEIQFEIkWAQhCAQhCAQhCAQhCUEIQgEIQMgSEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQFhCEAhCEoIQhAIQhAIQiSBYkIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQFiTq8JsnD5VzAuxGY9o7tOAtpaR4zo5mF6PxdwsCG1I7LHdu47/AAnH+xhvV4Z+UczCXquy66IKrUmFM1Ww+a26uqhjTI3g2IIvv1texl/pN0Zr7PNBa3xV6CViArDq2a96THcWFtbGdmmFCJFgESLEgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEURJ6V0W6B4TE0qdapiKjl1D5VCUVXSxQscxJDBhfThpAwdhOtRRmNimh3i1t1vOdBgadSo4SmvWOQ+ZbqltPj10tqLj9Z0OG6MUsJlpjDpiFIYGp1IdmXNcBzr2gCNRYaXAG4bWydiYSjUWqlDJUyFA2eqdDv0ZiL7tfKeTL+NMs7beGLjy19g7IqLSNOqaToKhdUZetVrZSrdoDKQb8N4vxmni8HSxVOpQrItSm9w4cZrk8RyYcCN0aB2dC4vY20FweRtLFF79mwIFuym4Hmx/SenHGY4yTqNSafNfSnoji9mvatTvSZmWnWQ5qbi5sCR8LEC+U2M5yfWO2djUsbSbD4gFqTsjOobJnCOHC3GqglRe2tuM+felvQXGYGpXfqWbCozNTroQydUW7Obip1AII3g2uNZpXIQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCARyi5A5m0bH096+Y++B2Gx6AoBClKg7581R8Qmdgl9Al7qotv0uTx3TvNn7WdiA2UDgRut4DhOIwzaG+o9psYXGaAZRfNvIB0vaccs7HfHCO+XFNSPWKQ6Muq3sbfrI8HjjVe9NTmuCSdy6/ETOT/bPiWwuVsp3WPyk2B2o6WQ0x2ij3FS5svh3T4Sfav1PSadyAHbNpYgXCk+e+WaVQN2EsoW2Y8Lch4zz7BbRfLbtn47jPfedDu0tNGjjGC7nY9kAB7G489LbvWWeaJfDZ7dwKii4LCwtvlLaSJUUqHZSAbEAEXtocp3mYeGxebepGg+tvIFzrrfjNfDVNNABpx5/lH2TLhPruPLj8R0TXEqy1sMrPbR1prTckjS1Ts2toeO6eVdN+irbMq06TVFqdbT60ZQQV7TLlPPdvn0dTrMd+nlrr5ziennRzDY1qfWuUqqGKVBVpqcmt1yN8Wo8Lc+E1jwzny8AhO+q9AaRZlTFspG4VsMtO/j8eYDxy+s5/bfRXFYRRUqKHolsorUzmp5uCtezKftAX4XnRzYMIQgEIQgEIQgEIQgEJZGBqdw+kcNn1T9Q+kCpCXBsyt3DHDZNf8Aln0gUYTRGxsR/LMcNhYk/wCGYGZCaw6P4n+WfQxw6OYr+WfeBjx9PePMffNcdGsV/LMcOjeJXtFNBqfIaxobtEdnzlqguqfaB/56zPGMphQCcp00YH75pYYqQrBgTcbiDOGU5ejGrNrk+ct4YC9yBexAPG3KU6ess0rznXSVqYO4Phb5TVoEmZOHY6TWoNMq0sMtyPC556nSbNJLjLqNLXG+ZmFUgDTUzTomw1089J1xjnlVr6vqZ519JNCnUKJWYJTQJVqHOlNmTNUUhWYHW4G4E67junfvjKajWovyYMdTyE87+kbZVTHPRWl2UWmS5tq7F2yjwA1Pz8J1x7cstyPMFrYMtYhqa7syUhVse92nBPt5T0Lo/UxGERevdNo7FxSBKrgs4o02Ns5DdpArWBBJy2O4icsOgFfve06/oRsrEYE1KVRs+GrKc6MLhHtbMByK3BHHTlOjm876Z7AOz8VUw981M2qUH79Br5SfEaqfFTMCe3dNuixxeHwoQ2qYV2pg6sTh3UlVJ45Sg1Pe8ZxA+j2t3/aNDiITuR9HtXv+0X/p5U7/ALRocLCdyfo+qd4+kUfR9U7x9I0OFhO7/wCnz94+kI0O5XY1PkPSWE2PT5D0kqVZOjyoiTZFPuj0kq7Jp90SdHkivAiXZdPuj0kybMp90ekkVpKrmTYiXZ1PuiO/d6ch6SXMYt42IRgKfdEbicDTyVOyPgf8JlgGRYp+xU/pv+EwPAtoCzEeIjy3ZHhYxdoi7HzPsZCW7HoJiu0Mouy7mYeTESQ4qqN1Rx5O/wCsiWKBM6a2s0tpYgbq1T+95pYTaWJYi9er/wCR/wBZkUhNHC7xMWOmNdM2KqEKDUc6cajn85oYBid5J89Zj30Xymvs0/lMXt1x6bVBvvX8QnR4VAUUkcPznMUTYnwZPxCdXgvgXynXxd15/N1DupXlFfDqQVtowIPkRaSWhednmU8CCVKtvyLm+1a59xJjTXlIKFRetZQwvYiwIvorcPkfSWzAi6teUQovKPiQI2pjlG9WOUlIjTAjKDlCOMIHLUgZZS8eiCSqkuwI9pOryIJJFAgSrUk6PKiiWaYgWFMCI1Y+0gS0hxgHV1P6b/hMnKyDGoerqf06n4DA8J2gNSPE/fKg+EDxlzags7eZ++U76TFdiCKIixwkaSpL2F3iU6cuYYaiYreLdv8ADNfZh1mMx0Wa2zju85i9u06bCHU/bT8QnW4H4E8px2ewYncGU+4nS7NxgP8A29xVVYE6BgVBNvK49ROni7rz+bqNS8ZUcAExC9hc2AGpJsABOS6W9IAKfUUDmrVyaaaHRDoX8L6gfM8J1eeRH0OfrcTiq+8M7lfDLcD1FZv7DOzac30MwXV0M43OQqsfrol7v5M7Ow8Cs3WYiUp5MaXjWMicGESl4hcSubxM0onLQlctCTQz0YSZZAtpIpHOBMoikSLP4yJqxHGBbWTowmVV2iqC533AA3XY7hOl2Xh0VQ7kM7C9+A8ByEKZQoM+4WHM6S6mz14kn2jK2JA3SH94GTY0VwyDgI3E01KVFsLFHHyKkSiNoCNqY9cra/VbefCRdPAtt0SrkHmfmLzKE9L6WbBFRrojU3y3ZGA6vTiGNhbxBN+QnA4jBNTNnUprvYFQfInfMus1VVRHCSLTiml4yKcktUDa0q5eEkQzNreLoC2i+U09nuBYkgDxnNJiDoCdBul/C1AdMyjxZ1RR/qYgTld+nbHWuXTUsRTdshJs7oLjlmE2Nm7YUtiM6qoQ0VXUIUc0iCVvpcZbePGcJVxyq2VCHIPxq3YB5g/WnV7K6IpVRq9cFzXsxp3yAAG4Jy2NybnSwtYazp45lO3n82WN1Ikr7RzIEqVBUqAG6UCr3OY2IS991tTxvMungFqPftdrStUZgXCcaasNMxGmlwB79E+xxTGUKSvdLO6+jEiVnUrpawG4AWAHlOlc5G9hdqUgFTL1aqAqgDsqoFgB4WmiuVhdSGHMG4nEvVtLmw8Piarg0GZFBGd/qBeN+BPhLLUuMdO1GMalLuJQKxUG9rettZSqPabc0bUpC1OPauY3OYDTRMIpc8okuxzS1G5xTiCOMzVqtG1KjSKt19o5eMoVtqOdxtKGJzk7veU2LjePe8zVXzjxe1RtD/tPAzrMDttsio5+EALUGoI5MPznnGIpsYYTalahYW6yn3SdQP8AKfyhXp37bU37xzHaHtI3xpPG3yvOZ2Zt+jUIAY037rdlv/c36dVW32bxIB9xMqjr42pwe/ytMvE7RqDi3zvN5cLTbgR9lv1ifudDqHI81vCcNWttMqmGqLloI2YVgmUI3YbKAeHby8t0b0M2VRxWHepiKQeq9aoHY2ViNLfDb3lB9kMyGmKoyH6rKbSpR6M1aZvSrtSvqeprVKBPnl09po9acZ00wlOhWppTpqofD0qrXRAc75g1ivC6+05lnPL7/wBZ6bj+heIrENUrdYVVUU1MrkIvwrcKDYXmefo8xF+y1P8A3j843Pw5/XnrMf8Al/1jM7f8BnpKfR7jP5iW/qVBLKfRpWb46yW+1Uf20jj8N39eXLiag3WHmt5LTepU009/yM9bwv0XUx/EqKfs07/jJnQ7N6FYShqFzHm1h7AAQb/15n0T6N1qxzdUQLjtuGRQL6m536cBPX8Oi01VBuRQo+Uu0sIigACwG4DQe0mSmo3KPnrKlrPK5tyk+QlevsJqnAJfix/ITdDfL2g1QDeQPnJo2wsJ0SoKc1Rmqnu/CnztqfWbyoqKFRQigWVVAUD5CNFXkIZpZC21WelIGpjlLbsJRxeMpU/4lRKf26iJ95lRG6CQuLSVayOAyOrqdzKwYH5iMYwiAmEcUESBxy0ByjjhRyl5aMnXDQMOpgM0qvs1husZ1gwo5R37IvKFcU+B7yekr1Nko3MTvDg15Q/danhJo280xHR2+60ZSwuMo/w6hIH1W7Y99Z6d+5l5RjbFWNLtwmH2/iqf8SgW8aZ/I/rNPD9L6Y+NXQ/5qbfeLidBU6Pal11a1tSbW8owdHQ3xFb8QBp7yaFXDdLMKf8AFT5m33zTodIMM26qn96yk3RWkTbsE+QjT0IoHeq/2iNDoaOOpN8NRD5MJbSsveHqJyydBcPyA8haWqfQ2gOLfJiJdDpUqrzHrJVrr3h6iYFPovQHePmxlylsCgPqeusI0zi6Y31FH+oRP3jT4Nm+yC33SKls2ku6mo+UtJSUbgB8oEX7eT8NNz4myD3jhUrNuVE8yXPtaTi0UuBAiFBz8dRvJewPbX3kqUFXcPMnfKzY8E5U7R8Nw85DiKxXViWPIboGkWUTF2ptxqZK06YYj6zHs+glDaWOq5SKZKHgygNY+R3zk8btPH1HCtSDWFi9OmwDeJB4zOVvpvGT2m2/tzEkENXZRyp2pr6jX3nI4XY9XGODTXMSdKj3YE8Tc/fO52f0UavZ8QSBvynT2nY4PBU6KhKagAC0zjMr21llJxGb0f2QMHQWiCGOrOw0Bc77CXXHOTuZGZ1cqqMg7xHzhJyoiwjKQeEmWMSTLARRJVSIokggCpJVEYDHZoEuXTTSV8WlRlKoQpP1jrJg9pXxm0Vpi51hqb3wnw1JlUA9ogak8TzkOKoFwRYi/FTYyLC7WWot93npErVKjMChGXjeZ3NNfG75No4daa3IYONLklmluzlOwbE8WF5KhOl5ZEsiWqGGNUEq9m8QLaSw/WbgAb/KWLQMJaarMBuj1fTUQBiM9pUOzQaoBqTaYG0dvNTOVaTv4gaSCmlfErck078LfnJbpZGhj9v06fZBzudAq6knykWGStiO1UvTp8KYPaI/zH8hH7M2ClM527T8zvm2oAk5va2ydIKGGVBZRYSQ0xyjyY1mmmTHpLyHpI8ijcAJKxjDAS8a0UmMJhCGNIji0YWgNJhEJiwMtTJlkCCWEIgSqY9Yy8cDAkAikRqxwgKqX3xHwqtvF49ZKphdqh2ctrWHpH4fB5P/ALLQMUGTUX5UgQSQRAYoMqFixIt4BAiF4QGGkp3gR6IBuFoQzQFJiZoXjSYDrxpMaTEvAUmNJgTGEwgJjSYpjTAaxjDHGMJgJeEQwgUhHiRLJBAerSRWkUcIFhDHgyBJIIEoMcGkQjoEoaKGkKxwgSho4NIRHCBLeF5GI6A68UNI4CFSZoZoyEB14l4wxYDrxCYRIQXjYQMAMYY6NMBDGGOMYYDSIQMIH//Z" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Mocha</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-menu">
+								<div class="title-div justify-content-between d-flex">
+									<img class="float-left col-2 rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCFosLj6av7_KwLKODRBLgXHUceY2IbXfIQ&usqp=CAU" style="width:100px;height:100px;">
+									<a href="#" style="text-decoration: none" class="col-9"><h4 style="color: black; padding: 30px 5px;">Coffee Latte</h4></a>
+									<p class="price float-right">
+										$49
+									</p>
+								</div>
+								<p>
+									Usage of the Internet is becoming more common due to rapid advance.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End menu Area -->
 {% endblock content %}
+
