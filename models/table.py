@@ -17,3 +17,4 @@ class Table(db.Model):
     table_number = db.Column(db.Integer, nullable=False)
     position = db.Column(db.String, nullable=False)
 
+
