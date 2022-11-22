@@ -8,8 +8,8 @@ from flask_login import login_user
 def sign_in():
     form = SignInForm()
     if form.validate_on_submit():
-        user=User.query.filter_by(email=form.email.data).first()
-        if user and bcrypt.checkpw(user.password,form.password.data):
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and bcrypt.check_password_hash(user.password,form.password.data):
             login_user(user,remember=form.remember.data)
             flash('successful login','success')
             return redirect(url_for('home'))

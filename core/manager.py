@@ -7,7 +7,7 @@ from app import app
 # create the extension
 db = SQLAlchemy()
 # create bcrypt to hash password
-bcrypt=Bcrypt(app)
+bcrypt = Bcrypt(app)
 # configure the SQLite database, relative to the app instance folder
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 # initialize the app with the extension

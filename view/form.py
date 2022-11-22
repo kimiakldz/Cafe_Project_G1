@@ -3,10 +3,13 @@ from wtforms import StringField, PasswordField, SubmitField, BooleanField, valid
 
 
 class SignUpForm(FlaskForm):
-    username = StringField('Username', [validators.DataRequired()])
+    f_name = StringField('First Name', [validators.DataRequired()])
+    l_name = StringField('Last Name', [validators.DataRequired()])
+    phone = StringField('Phone')
     email = StringField('Email', [validators.DataRequired()])
     password = PasswordField('Password', [validators.DataRequired()])
-    confirm_password = PasswordField('Confirm Password', [validators.DataRequired(), validators.equal_to(password)])
+    confirm_password = PasswordField('Confirm Password', [validators.DataRequired(), validators.EqualTo(password)])
+    address = StringField('Address')
     submit = SubmitField('Sign Up')
 
 
@@ -15,6 +18,7 @@ class SignInForm(FlaskForm):
     password = PasswordField('Password', [validators.DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Sign In')
+
 
 class ContactForm(FlaskForm):
     name = StringField('Name', [validators.DataRequired()])
