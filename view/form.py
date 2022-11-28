@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextAreaField
 
 
 class SignUpForm(FlaskForm):
@@ -24,6 +24,6 @@ class ContactForm(FlaskForm):
     name = StringField('Name', [validators.DataRequired()])
     email = StringField('Email', [validators.DataRequired()])
     phone = PasswordField('Phone', [validators.DataRequired()])
-    message = StringField('Message', [validators.DataRequired()])
+    message = TextAreaField('Message', [validators.DataRequired()])
     copy = BooleanField('Send copy to my email')
     submit = SubmitField('Send')
