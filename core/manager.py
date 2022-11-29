@@ -9,10 +9,14 @@ db = SQLAlchemy()
 # create bcrypt to hash password
 bcrypt = Bcrypt(app)
 # configure the SQLite database, relative to the app instance folder
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+username = 'myuser'
+password = '17041369'
+database = 'cafe_project'
+app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{username}:{password}@localhost:5432/{database}"
 # initialize the app with the extension
 db.init_app(app)
 # create login manager
-login_manager=LoginManager(app)
+login_manager = LoginManager(app)
 
 

@@ -1,8 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from view.form import SignUpForm
 from models.user import User
-from core.manager import db
-from core.manager import bcrypt
+from core.manager import bcrypt, db
 
 
 def sign_up():
