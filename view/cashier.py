@@ -1,16 +1,20 @@
-from core.manager import admin1, session
+from core.manager import admin, db, MyModelView
 from flask_admin.contrib.sqla import ModelView
-from models.user import User
+from flask_admin import AdminIndexView
+from flask_security import current_user
+from models.user import User, Role
 from models.orders import Order
 from models.table import Table
 from models.menuitem import MenuItem
-from models.reciept import Reciept
+from models.reciept import Receipt
 
-admin1.add_view(ModelView(User, session))
-admin1.add_view(ModelView(Order, session))
-admin1.add_view(ModelView(Table, session))
-admin1.add_view(ModelView(MenuItem, session))
-admin1.add_view(ModelView(Reciept, session))
+
+admin.add_view(MyModelView(User, db.session))
+admin.add_view(MyModelView(Order, db.session))
+admin.add_view(MyModelView(Table, db.session))
+admin.add_view(MyModelView(MenuItem, db.session))
+admin.add_view(MyModelView(Receipt, db.session))
+admin.add_view(MyModelView(Role, db.session))
 
 # def cashier():
 #     return render_template('cashier.html', title='Cashier')

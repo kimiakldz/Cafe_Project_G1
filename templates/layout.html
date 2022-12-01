@@ -52,6 +52,8 @@
                           <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="{{url_for('sign_in')}}" >Sign In</a></li>
                             <li><a class="dropdown-item" href="{{url_for('sign_up')}}" >Sign Up</a></li>
+                            <li><a class="dropdown-item" href="{{url_for('sign_out')}}" >Sign Out</a></li>
+
                           </ul>
                         </li>
                       </ul>
@@ -73,6 +75,15 @@
           <!-- Navbar -->
     </header>
     <main class="row">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class=flashes>
+                {% for category, message in messages %}
+                  <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
         {% block content %}
         {% endblock content %}
     </main>
