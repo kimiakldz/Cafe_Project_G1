@@ -1,0 +1,98 @@
+body {
+    /*font-family: "Lato", sans-serif;*/
+    transition: background-color .5s;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /*background-color: #bdb9b9;*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 24px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    /*padding: 16px;*/
+  }
+  #move{
+    transition: margin-left .5s;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .form-control:focus{
+    box-shadow: none;border-color: #BA68C8
+}
+.profile-button{
+    background: rgb(99, 39, 120);box-shadow: none;border: none
+}
+.profile-button:hover{
+    background: #682773
+}
+.profile-button:focus{
+    background: #682773;box-shadow: none
+}
+.profile-button:active{
+    background: #682773;box-shadow: none
+}
+.back:hover{
+    color: #682773;cursor: pointer
+}
+.labels{
+    font-size: 11px
+}
+.add-experience:hover{
+    background: #BA68C8;color: #fff;cursor: pointer;border: solid 1px #BA68C8
+}
+
+.main-back {
+  /* The image used */
+  background-image: url('images/home6.jpg');
+  /* Full height */
+  height: 100%;
+  width: 100%
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-image {
+  /* The image used */
+  background-image: url('https://t4.ftcdn.net/jpg/02/82/24/63/240_F_282246326_w0GrFUvQKhMxbtHkUMoS9j1vNc7pntqa.jpg');
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

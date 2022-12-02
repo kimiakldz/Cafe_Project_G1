@@ -7,6 +7,7 @@ from view.sign_in import sign_in
 from view.sign_up import sign_up
 from view.sign_out import sign_out
 from view.menu import menu
+from view.profile import profile
 from view.contact_us import contact_us
 
 
@@ -16,6 +17,7 @@ app.add_url_rule('/sign in', 'sign_in', sign_in, methods=['GET', 'POST'])
 app.add_url_rule('/sign out', 'sign_out', sign_out)
 app.add_url_rule('/menu', 'menu', menu)
 app.add_url_rule('/contact us', 'contact_us', contact_us, methods=['GET', 'POST'])
+app.add_url_rule('/profile', 'profile', profile, methods=['GET', 'POST'])
 
 
 
