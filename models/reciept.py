@@ -7,6 +7,7 @@ from models.user import User
 
 class Receipt(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    table_id = db.Column(db.Integer, db.ForeignKey(Table.id), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey(User.id), nullable=False)
+    table_id = db.Column(db.Integer, db.ForeignKey('table.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    orders = db.relationship('Order', backref='receipt', lazy=True)
 

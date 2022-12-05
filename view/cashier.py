@@ -5,14 +5,14 @@ from flask_security import current_user
 from models.user import User, Role
 from models.orders import Order
 from models.table import Table
-from models.menuitem import MenuItem
+from models.menuitem import Menu
 from models.reciept import Receipt
 
 
 admin.add_view(MyModelView(User, db.session))
 admin.add_view(MyModelView(Order, db.session))
 admin.add_view(MyModelView(Table, db.session))
-admin.add_view(MyModelView(MenuItem, db.session))
+admin.add_view(MyModelView(Menu, db.session))
 admin.add_view(MyModelView(Receipt, db.session))
 admin.add_view(MyModelView(Role, db.session))
 
