@@ -27,3 +27,14 @@ class ContactForm(FlaskForm):
     message = TextAreaField('Message', [validators.DataRequired()])
     copy = BooleanField('Send copy to my email')
     submit = SubmitField('Send')
+
+
+class UpdateProfile(FlaskForm):
+    f_name = StringField('First Name', [validators.DataRequired()])
+    l_name = StringField('Last Name', [validators.DataRequired()])
+    phone = StringField('Phone')
+    email = StringField('Email', [validators.DataRequired()])
+    password = PasswordField('Password', [validators.DataRequired()])
+    confirm_password = PasswordField('Confirm Password', [validators.DataRequired(), validators.EqualTo(password)])
+    address = StringField('Address')
+    submit = SubmitField('Update')

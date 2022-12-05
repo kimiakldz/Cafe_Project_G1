@@ -14,8 +14,8 @@ db = SQLAlchemy()
 bcrypt = Bcrypt(app)
 # configure the SQLite database, relative to the app instance folder
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
-username = 'postgres'
-password = '9137361339'
+username = 'myuser'
+password = '17041369'
 database = 'cafe_project'
 app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{username}:{password}@localhost:5432/{database}"
 # initialize the app with the extension
