@@ -74,40 +74,51 @@
           </div>
         </div>
         <div class="col-md-5 border-right">
-          <div class="p-3 py-5">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4 class="text-right">Profile Settings</h4>
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-6">
-                <form method="post">
-                  <label class="labels">First Name</label>
-                  <input type="text" class="form-control" placeholder="first name" value="{{current_user.f_name}}">
+          <form method="post">
+            <div class="p-3 py-5">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="text-right">Profile Settings</h4>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-6">
+<!--                  <label class="labels">First Name</label>-->
+<!--                  <input type="text" class="form-control" placeholder="first name" value="{{current_user.f_name}}">-->
+                  {{ form.f_name.label(class="labels") }}
+                  {{form.f_name(class="form-control form-control-lg is-invalid", value="{{current_user.f_name}}")}}
                 </div>
                 <div class="col-md-6">
-                  <label class="labels">Last Name</label>
-                  <input type="text" class="form-control" value="{{current_user.l_name}}" placeholder="surname">
+<!--                  <label class="labels">Last Name</label>-->
+<!--                  <input type="text" class="form-control" value="{{current_user.l_name}}" placeholder="surname">-->
+                  {{form.l_name.label(class="label")}}
+                  {{form.l_name(class="form-control form-control-lg is-invalid", value="{{current_user.l_name}}")}}
                 </div>
               </div>
               <div class="row mt-3">
                 <div class="col-md-12">
-                  <label class="labels">PhoneNumber</label>
-                  <input type="text" class="form-control" placeholder="enter phone number" value="{{current_user.phone}}">
+<!--                  <label class="labels">PhoneNumber</label>-->
+<!--                  <input type="text" class="form-control" placeholder="enter phone number" value="{{current_user.phone}}">-->
+                  {{form.phone.label(class="label")}}
+                  {{form.phone(class="form-control form-control-lg is-invalid", value="{{current_user.phone}}")}}
                 </div>
                 <div class="col-md-12">
-                  <label class="labels">Address</label>
-                  <input type="text" class="form-control" placeholder="enter address" value="{{current_user.address}}">
+<!--                  <label class="labels">Address</label>-->
+<!--                  <input type="text" class="form-control" placeholder="enter address" value="{{current_user.address}}">-->
+                  {{form.password.label(class="label")}}
+                  {{form.password(class="form-control form-control-lg is-invalid", value="{{current_user.address}}")}}
                 </div>
                 <div class="col-md-12">
-                  <label class="labels">Email</label>
-                  <input type="text" class="form-control" placeholder="enter email id" value="{{current_user.email}}">
+<!--                  <label class="labels">Email</label>-->
+<!--                  <input type="text" class="form-control" placeholder="enter email id" value="{{current_user.email}}">-->
+                  {{form.email.label(class="label")}}
+                  {{form.email(class="form-control form-control-lg is-invalid", value="{{current_user.email}}")}}
                 </div>
               </div>
               <div class="mt-5 text-center">
-                <button class="btn btn-primary profile-button" type="button">Save Profile</button>
-              </form>
+<!--                <button class="btn btn-primary profile-button" type="button">Save Profile</button>-->
+                {{form.submit(class="btn btn-primary profile-button")}}
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
