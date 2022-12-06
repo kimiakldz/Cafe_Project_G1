@@ -1,30 +1,51 @@
 {% extends "layout.html" %}
 {% block content %}
-<div>
-        <form method="post" action="" class="mt-5">
-            {{form.hidden_tag()}}
-            <fieldset class="form-group">
-                <div class="form-group">
-                    {{form.email.label(class="form-control-label")}}
-                    {{form.email(class="form-control form-control-lg is-invalid")}}
 
-                </div>
-                <div class="form-group">
-                      {{form.password.label(class="form-control-label")}}
-                    {{form.password(class="form-control form-control-lg is-invalid")}}
-                </div>
-                <div class="form-group">
-                      {{form.remember(class="form-check-input")}}
-                      {{form.remember.label(class="form-check-label")}}
-                </div>
-            </fieldset>
-            <div class="form-group">
-                {{form.submit(class="btn btn-outline-info")}}
+<section class="home-back banner-area" id="home"> <!--Atefeh-->
+
+        <div class="container rounded mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p></div>
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p></div>
             </div>
-            <small>
-                <a href="#" class="ml-2">Forgot Password?</a>
-            </small>
-        </form>
 
-    </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 bg-white">
+                    <form method="post" action="" class="mt-5">
+                        {{form.hidden_tag()}}
+                        <fieldset class="form-group">
+                            <div class="form-group">
+                                {{form.email.label(class="form-control-label")}}
+                                {{form.email(class="form-control form-control-lg is-invalid")}}
+
+                            </div>
+                            <div class="form-group">
+                                  {{form.password.label(class="form-control-label")}}
+                                {{form.password(class="form-control form-control-lg is-invalid")}}
+                            </div>
+                            <div class="form-group">
+                                  {{form.remember(class="form-check-input")}}
+                                  {{form.remember.label(class="form-check-label")}}
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            {{form.submit(class="btn btn-outline-info")}}
+                        </div>
+                        <small>
+                            <a href="#" class="ml-2">Forgot Password?</a>
+                        </small>
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+                <div class="col-md-4"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+            </div>
+        </div>
+
+    </section>
 {% endblock content %}
