@@ -13,8 +13,7 @@ class Order(db.Model):
     number = db.Column(db.Integer, nullable=False)
     receipt_id = db.Column(db.Integer, db.ForeignKey(Receipt.id), nullable=False)
     order_status = db.Column(db.Integer, db.ForeignKey('status.id'), nullable=False)
-    time_stamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-
+    image = db.Column(db.String,nullable=False)
 
 class Status(db.Model):
     id = db.Column(db.Integer, primary_key=True)

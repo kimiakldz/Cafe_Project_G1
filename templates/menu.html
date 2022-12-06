@@ -12,90 +12,96 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/Cappuccino.jpg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Cappuccino</h4></a>
-									<p class="price float-right">
-										$49
+						{% for item in items %}
+							<div class="col-lg-4">
+								<div class="single-menu">
+									<div class="title-div justify-content-between d-flex">
+										<img class="float-left col-2 rounded" src="static/images/Cappuccino.jpg" style="width:100px;height:100px;">
+<!--										{% set x = item.id %}-->
+										<form method="post" action="{{url_for('order')}}">
+											<input name="item_id" value="{{item.id}}" type="hidden">
+											<input name="item_name" value="{{item.name}}" type="hidden">
+											<input name="item_price" value="{{item.price}}" type="hidden">
+											<label>{{item.name}}   {{item.price}}</label>
+											<input type="submit" value="order">
+										</form >
+									</div>
+									<p>
+										Usage of the Internet is becoming more common due to rapid advance.
 									</p>
 								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/Americano.jpg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Americano</h4></a>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/espresso.jpg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Espresso</h4></a>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/caramel-macchiato.jpg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Macchiato</h4></a>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/mocha.jpeg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Mocha</h4></a>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<img class="float-left col-2 rounded" src="static/images/latte.jpeg" style="width:100px;height:100px;">
-									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Coffee Latte</h4></a>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>
-							</div>
-						</div>
+						{% endfor %}
+<!--						<div class="col-lg-4">-->
+<!--							<div class="single-menu">-->
+<!--								<div class="title-div justify-content-between d-flex">-->
+<!--									<img class="float-left col-2 rounded" src="static/images/Americano.jpg" style="width:100px;height:100px;">-->
+<!--									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Americano</h4></a>-->
+<!--									<p class="price float-right">-->
+<!--										$49-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Usage of the Internet is becoming more common due to rapid advance.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-lg-4">-->
+<!--							<div class="single-menu">-->
+<!--								<div class="title-div justify-content-between d-flex">-->
+<!--									<img class="float-left col-2 rounded" src="static/images/espresso.jpg" style="width:100px;height:100px;">-->
+<!--									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Espresso</h4></a>-->
+<!--									<p class="price float-right">-->
+<!--										$49-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Usage of the Internet is becoming more common due to rapid advance.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-lg-4">-->
+<!--							<div class="single-menu">-->
+<!--								<div class="title-div justify-content-between d-flex">-->
+<!--									<img class="float-left col-2 rounded" src="static/images/caramel-macchiato.jpg" style="width:100px;height:100px;">-->
+<!--									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Macchiato</h4></a>-->
+<!--									<p class="price float-right">-->
+<!--										$49-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Usage of the Internet is becoming more common due to rapid advance.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-lg-4">-->
+<!--							<div class="single-menu">-->
+<!--								<div class="title-div justify-content-between d-flex">-->
+<!--									<img class="float-left col-2 rounded" src="static/images/mocha.jpeg" style="width:100px;height:100px;">-->
+<!--									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Mocha</h4></a>-->
+<!--									<p class="price float-right">-->
+<!--										$49-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Usage of the Internet is becoming more common due to rapid advance.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-lg-4">-->
+<!--							<div class="single-menu">-->
+<!--								<div class="title-div justify-content-between d-flex">-->
+<!--									<img class="float-left col-2 rounded" src="static/images/latte.jpeg" style="width:100px;height:100px;">-->
+<!--									<a href="#" style="text-decoration: none" class="col-8"><h4 style="color: black; padding: 30px 5px;">Coffee Latte</h4></a>-->
+<!--									<p class="price float-right">-->
+<!--										$49-->
+<!--									</p>-->
+<!--								</div>-->
+<!--								<p>-->
+<!--									Usage of the Internet is becoming more common due to rapid advance.-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
 					</div>
 				</div>
 			</section>

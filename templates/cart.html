@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form method="post" class="m-5">
+        {% if session['orders'] %}
+            {% for key,val in session['orders'].items() %}
+            <label>{{session['orders'][key]['name']}}</label>
+            <label>{{session['orders'][key]['price']}}</label>
+            <input type="number" value="1" name="num"> <br>
+            <hr>
+            {% endfor %}
+        {% else %}
+            <h3> Empty Cart <h3>
+        {% endif %}
+    </form>
+{% endblock content %}
+
+
